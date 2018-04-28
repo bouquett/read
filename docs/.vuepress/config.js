@@ -20,10 +20,11 @@ module.exports = {
             },
         ],
         sidebar: [{
-                title: 'Group 2',
+                title: '前端',
                 collapsable: false,
                 children: [
-                    '/web/'
+                    '/web/',
+                    '/development/'
                 ]
             },
             '/about/',
