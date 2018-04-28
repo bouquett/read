@@ -1,33 +1,39 @@
 module.exports = {
-    title: 'Hello VuePress',
-    description: 'Just playing around',
-    base: 'read',
+    title: 'My VuePress',
+    base: '/vuepress_demoII/',
     themeConfig: {
         nav: [{
-            text: 'Languages',
-            items: [{
-                    text: 'Chinese',
-                    link: '/language/chinese'
-                },
-                {
-                    text: 'Japanese',
-                    link: '/language/japanese'
-                }
-            ]
-        }],
-      sidebar: [
-      {
-        title: 'Group 1',
-        collapsable: false,
-        children: [
-          '/'
+                text: 'Home',
+                link: '/'
+            },
+            {
+                text: 'About',
+                link: '/about/'
+            },
+            {
+                text: 'Guide',
+                link: '/guide/'
+            },
+            {
+                text: 'VuePress',
+                link: 'https://vuepress.vuejs.org/'
+            },
+        ],
+        sidebar: [{
+                title: 'Group 2',
+                collapsable: false,
+                children: [
+                    '/web/'
+                ]
+            },
+            '/about/',
+            {
+                title: 'Group 2',
+                collapsable: false,
+                children: [
+                    '/guide/'
+                ]
+            }
         ]
-      },
-      {
-        title: 'Group 2',
-        children: [ /* ... */ ]
-      }
-    ]
     }
-
 }
