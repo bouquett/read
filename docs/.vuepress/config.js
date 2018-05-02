@@ -3,38 +3,50 @@ module.exports = {
     base: '/vuepress_demoII/',
     themeConfig: {
         nav: [{
-                text: 'Home',
-                link: '/'
+                text: 'html',
+                link: '/development/'
             },
             {
-                text: 'About',
+                text: 'css',
                 link: '/about/'
             },
             {
-                text: 'Guide',
+                text: 'js',
                 link: '/guide/'
             },
             {
-                text: 'VuePress',
+                text: 'other',
                 link: 'https://vuepress.vuejs.org/'
             },
         ],
-        sidebar: [{
-                title: '前端',
-                collapsable: false,
-                children: [
-                    '/web/',
-                    '/development/'
-                ]
-            },
-            '/about/',
-            {
-                title: 'Group 2',
-                collapsable: false,
-                children: [
-                    '/guide/'
-                ]
-            }
-        ]
+        sidebar: {
+            '/development/': [
+                
+                '', /* /foo/ */
+                'two', /* /foo/one.html */
+                'three' /* /foo/two.html */
+            ],
+            
+        }
+
+
+        // sidebar: [{
+        //         title: '前端',
+        //         collapsable: false,
+        //         children: [
+        //             '/web/',
+        //             '/development/'
+        //         ]
+        //     },
+        //     '/about/',
+        //     {
+        //         title: 'Group 2',
+        //         collapsable: false,
+        //         children: [
+        //             '/guide/'
+        //         ]
+        //     }
+
+        // ]
     }
 }
